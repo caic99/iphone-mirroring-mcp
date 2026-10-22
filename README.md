@@ -1,16 +1,21 @@
-# iphone-mcp
+# iPhone Mirroring MCP
 
 MCP server that lets Claude Code see and operate your iPhone through macOS **iPhone Mirroring**.
+
+![Claude Code completing a daily-tasks checklist in Taobao on a real iPhone through iPhone Mirroring](docs/demo.gif)
+
+*Hands off: Claude Code works through a daily-tasks checklist in Taobao on a real iPhone — tapping buttons by their
+label, reading the screen with OCR, waiting out the in-app timers, and confirming each reward landed.*
 
 ## Install
 
 ```bash
 swift build -c release
-claude mcp add iphone -- "$PWD/.build/release/iphone-mcp"
+claude mcp add iphone -- "$PWD/.build/release/iphone-mirroring-mcp"
 ```
 
 Requires macOS 15+, iPhone Mirroring connected, and **Screen Recording + Accessibility** granted to the app
-that launches Claude Code (Claude desktop app or your terminal). `iphone-mcp status` shows what is missing.
+that launches Claude Code (Claude desktop app or your terminal). `iphone-mirroring-mcp status` shows what is missing.
 
 ## Tools
 
@@ -29,17 +34,17 @@ idleness first.
 
 ## Safety
 
-- `IPHONE_MCP_READONLY=1` exposes only screenshot, screenshot_text, status.
+- `IPHONE_MIRRORING_MCP_READONLY=1` exposes only screenshot, screenshot_text, status.
 - Leave input tools un-allowlisted in Claude Code to approve every action.
-- `IPHONE_MCP_LOG=/path/file` logs tool names and argument keys only.
+- `IPHONE_MIRRORING_MCP_LOG=/path/file` logs tool names and argument keys only.
 
 ## Debugging
 
 ```bash
-iphone-mcp status
-iphone-mcp shot out.png [--full]
-iphone-mcp call <tool> '<json>'
-iphone-mcp selftest
+iphone-mirroring-mcp status
+iphone-mirroring-mcp shot out.png [--full]
+iphone-mirroring-mcp call <tool> '<json>'
+iphone-mirroring-mcp selftest
 scripts/smoke.sh
 ```
 

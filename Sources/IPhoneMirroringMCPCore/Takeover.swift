@@ -10,7 +10,7 @@ public actor Takeover {
         public var activateTimeout = 1.0
         public var settleAfterActivateMs = 250
         public init() {
-            if let v = ProcessInfo.processInfo.environment["IPHONE_MCP_SETTLE_MS"], let ms = Int(v) {
+            if let v = ProcessInfo.processInfo.environment["IPHONE_MIRRORING_MCP_SETTLE_MS"], let ms = Int(v) {
                 settleAfterActivateMs = ms
             }
         }

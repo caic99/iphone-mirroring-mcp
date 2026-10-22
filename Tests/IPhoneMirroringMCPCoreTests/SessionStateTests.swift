@@ -1,5 +1,5 @@
 import Testing
-@testable import IPhoneMCPCore
+@testable import IPhoneMirroringMCPCore
 
 @Suite struct SessionStateTests {
     @Test func noNativeUIMeansLiveStream() { #expect(SessionState.from(nodes: [], rootReadable: true) == .ready) }

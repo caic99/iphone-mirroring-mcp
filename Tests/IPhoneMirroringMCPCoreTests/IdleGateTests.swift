@@ -1,5 +1,5 @@
 import Testing
-@testable import IPhoneMCPCore
+@testable import IPhoneMirroringMCPCore
 
 @Suite struct IdleGateTests {
     @Test func idleWhenNoRecentInput() { #expect(!IdleGate.userIsActive(lastInputAgo: 2, ourLastPostAgo: nil, threshold: 0.75)) }

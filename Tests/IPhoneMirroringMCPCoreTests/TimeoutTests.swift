@@ -1,5 +1,5 @@
 import Testing
-@testable import IPhoneMCPCore
+@testable import IPhoneMirroringMCPCore
 
 @Suite struct TimeoutTests {
     @Test func fastOperationReturnsItsValue() async throws {

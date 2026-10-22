@@ -1,7 +1,7 @@
 import AppKit
 import CoreText
 import Testing
-@testable import IPhoneMCPCore
+@testable import IPhoneMirroringMCPCore
 
 @Suite struct OCRTests {
     @Test func readingOrderGroupsRowsLeftToRight() {

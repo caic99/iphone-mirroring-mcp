@@ -1,6 +1,6 @@
 import Foundation
 import Testing
-@testable import IPhoneMCPCore
+@testable import IPhoneMirroringMCPCore
 
 @Suite struct RestorePolicyTests {
     let mirroring: pid_t = 100, userApp: pid_t = 200

@@ -1,5 +1,5 @@
 import Testing
-@testable import IPhoneMCPCore
+@testable import IPhoneMirroringMCPCore
 
 func line(_ t: String, _ x: Int, _ y: Int, w: Int = 40, h: Int = 20) -> TextLine {
     TextLine(text: t, x: x, y: y, w: w, h: h, confidence: 1)
