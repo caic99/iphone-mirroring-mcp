@@ -24,7 +24,7 @@ public enum Permissions {
             }
             pid = parentPID(p)
         }
-        return "the app that launched iphone-mcp (e.g. Claude or Terminal)"
+        return "the app that launched iphone-mirroring-mcp (e.g. Claude or Terminal)"
     }
 
     public static func require() throws {

@@ -2,15 +2,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "iphone-mcp",
+    name: "iphone-mirroring-mcp",
     platforms: [.macOS(.v15)],
     dependencies: [
         .package(url: "https://github.com/modelcontextprotocol/swift-sdk.git", exact: "0.12.1"),
     ],
     targets: [
-        .target(name: "IPhoneMCPCore", dependencies: [.product(name: "MCP", package: "swift-sdk")]),
-        .executableTarget(name: "iphone-mcp", dependencies: ["IPhoneMCPCore", .product(name: "MCP", package: "swift-sdk")]),
-        .testTarget(name: "IPhoneMCPCoreTests", dependencies: ["IPhoneMCPCore"]),
+        .target(name: "IPhoneMirroringMCPCore", dependencies: [.product(name: "MCP", package: "swift-sdk")]),
+        .executableTarget(name: "iphone-mirroring-mcp", dependencies: ["IPhoneMirroringMCPCore", .product(name: "MCP", package: "swift-sdk")]),
+        .testTarget(name: "IPhoneMirroringMCPCoreTests", dependencies: ["IPhoneMirroringMCPCore"]),
     ],
     swiftLanguageModes: [.v5]
 )

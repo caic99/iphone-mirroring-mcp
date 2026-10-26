@@ -1,5 +1,5 @@
 import AppKit
-import IPhoneMCPCore
+import IPhoneMirroringMCPCore
 import MCP
 
 /// Harmless on-device check: Spotlight, typing, OCR, scrolling the results list, Home.

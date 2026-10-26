@@ -1,6 +1,6 @@
 import CoreGraphics
 import Testing
-@testable import IPhoneMCPCore
+@testable import IPhoneMirroringMCPCore
 
 @Suite struct GeometryTests {
     let g = PhoneGeometry(windowFrame: CGRect(x: 509, y: 56, width: 380, height: 837))

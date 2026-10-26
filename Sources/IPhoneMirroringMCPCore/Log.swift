@@ -2,7 +2,7 @@ import Foundation
 
 /// Optional action log: tool name and argument KEYS only — never values (type_text may be private), never images.
 enum Log {
-    static let path = ProcessInfo.processInfo.environment["IPHONE_MCP_LOG"]
+    static let path = ProcessInfo.processInfo.environment["IPHONE_MIRRORING_MCP_LOG"]
 
     static func action(_ name: String, keys: [String], outcome: String) {
         guard let path else { return }

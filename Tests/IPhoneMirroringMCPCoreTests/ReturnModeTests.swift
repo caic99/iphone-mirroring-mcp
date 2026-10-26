@@ -1,5 +1,5 @@
 import Testing
-@testable import IPhoneMCPCore
+@testable import IPhoneMirroringMCPCore
 
 @Suite struct ReturnModeTests {
     @Test func textOnlyWhenOCRFindsEnough() {

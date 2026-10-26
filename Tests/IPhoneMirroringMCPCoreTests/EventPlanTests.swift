@@ -1,6 +1,6 @@
 import CoreGraphics
 import Testing
-@testable import IPhoneMCPCore
+@testable import IPhoneMirroringMCPCore
 
 @Suite struct EventPlanTests {
     let c = CGPoint(x: 0, y: 0), a = CGPoint(x: 100, y: 500), b = CGPoint(x: 100, y: 300)

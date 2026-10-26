@@ -1,6 +1,6 @@
 import MCP
 import Testing
-@testable import IPhoneMCPCore
+@testable import IPhoneMirroringMCPCore
 
 @Suite struct ArgsTests {
     @Test func numbersAcceptIntAndDouble() throws {
